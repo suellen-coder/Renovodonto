@@ -1,7 +1,7 @@
 // Adicione no início do script.js para ativar a página de limite.
 // Altere para true quando as cinco vagas forem preenchidas.
 
-const limiteAtingido = true;
+const limiteAtingido = false;
 
 if (
   limiteAtingido &&
