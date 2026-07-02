@@ -1,0 +1,204 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clínica Renov — Condição Especial</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="pagina-triagem">
+    <section class="hero">
+      <header class="brand">
+        <img
+          src="logo.png"
+          alt="Instituto Renov"
+          class="brand-logo"
+        >
+      </header> 
+      <div class="hero-content">
+        <span class="eyebrow">— Edição especial de sexta</span>
+
+        <h1>
+          Seu sorriso merece um
+          <em>novo brilho.</em>
+        </h1>
+
+        <p>
+          Responda uma triagem rápida e descubra se você pode acessar
+          nossa condição exclusiva para clareamento dental.
+        </p>
+
+        <a href="#triagem">Quero descobrir ↓</a>
+      </div>
+
+      <div class="badge">
+        <small>Só nesta</small>
+        <strong>sexta</strong>
+      </div>
+    </section>
+
+    <section class="screening" id="triagem">
+      <div class="intro">
+        <span class="step">01 — Triagem rápida</span>
+        <h2>Vamos entender o seu sorriso?</h2>
+
+        <p>
+          São menos de 2 minutos. Suas respostas ajudam nossa equipe
+          a preparar a melhor avaliação para você.
+        </p>
+
+        <div class="privacy">✓ Seus dados estão protegidos</div>
+      </div>
+
+      <form id="formulario">
+        <label class="name-field">
+          <span>Como podemos te chamar?</span>
+
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="Digite seu primeiro nome"
+            autocomplete="given-name"
+            required
+          >
+        </label>
+
+        <fieldset>
+          <legend>Você já fez clareamento dental antes?</legend>
+
+          <div class="choices two">
+            <label>
+              <input type="radio" name="clareamento" value="sim" required>
+              <span>Sim, já fiz</span>
+            </label>
+
+            <label>
+              <input type="radio" name="clareamento" value="nao">
+              <span>Não, seria a primeira vez</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Você sente sensibilidade nos dentes?</legend>
+
+          <div class="choices">
+            <label>
+              <input type="radio" name="sensibilidade" value="frequente" required>
+              <span>Frequentemente</span>
+            </label>
+
+            <label>
+              <input type="radio" name="sensibilidade" value="as-vezes">
+              <span>Às vezes</span>
+            </label>
+
+            <label>
+              <input type="radio" name="sensibilidade" value="nao">
+              <span>Não sinto</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Quando você gostaria de transformar seu sorriso?</legend>
+
+          <div class="choices">
+            <label>
+              <input type="radio" name="momento" value="agora" required>
+              <span>O quanto antes</span>
+            </label>
+
+            <label>
+              <input type="radio" name="momento" value="mes">
+              <span>Neste mês</span>
+            </label>
+
+            <label>
+              <input type="radio" name="momento" value="pesquisando">
+              <span>Estou pesquisando</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <p class="error" id="erro">
+          Preencha seu nome e responda todas as perguntas.
+        </p>
+
+        <button class="button" type="submit">
+          Liberar minha condição →
+        </button>
+
+        <p class="microcopy">
+          Sem compromisso. A avaliação é feita por profissionais.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <main id="pagina-recompensa" class="hidden">
+    <header class="brand reward-brand">
+        <img
+          src="logo.png"
+          alt="Instituto Renov"
+          class="brand-logo"
+        >
+    </header>
+
+    <section class="reward-card">
+      <div class="check">✓</div>
+
+      <span class="eyebrow reward-eyebrow">Condição liberada</span>
+
+      <h1>
+        <span id="nome-recompensa">Você</span> acaba de conseguir uma
+        <em>Consulta Diagnóstica</em> e uma condição especial com valor
+        exclusivo para clareamento!
+      </h1>
+
+      <p>
+        Uma oportunidade para planejar seu novo sorriso com segurança,
+        cuidado e acompanhamento profissional.
+      </p>
+
+      <div class="ticket">
+        <small>Sua recompensa</small>
+        <strong>Consulta Diagnóstica + valor exclusivo</strong>
+      </div>
+
+      <div class="alert">
+        <span class="alert-icon">!</span>
+
+        <span>
+          <strong>Atenção:</strong> essa condição estará disponível para
+          as 5 primeiras pessoas que responderem ao formulário e só
+          permanecerá válida enquanto você estiver neste site.
+        </span>
+      </div>
+
+      <a
+        class="button reward-button"
+        href="https://wa.me/5588994673004"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Aproveitar recompensa →
+      </a>
+
+      <p class="microcopy">
+        Você será direcionado para o atendimento da Clínica Renov.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
